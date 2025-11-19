@@ -206,7 +206,7 @@ export const eliminarUsuario = async (req, res) => {
     const {id} = req.params;
 
     try {
-        if(req.usuario.rol !== 'admin') {
+        if(req.usuario.rol !== 'superadmin') {
             const error = new Error('No tienes permisos para eliminar usuarios');
             return res.status(403).json({msg: error.message});
         }
