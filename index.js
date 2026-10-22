@@ -52,6 +52,7 @@ app.use('/api/dashboard', dashboardRoutes);
 app.use('/api/productos', productoRoutes)
 app.use('/api/unidades-medida', unidadMedidaRoutes);
 app.use('/api/suministros-parciales', suministroParcialRoutes);
+
 app.use('/api/cumplimiento', cumplimientoRoutes);
 
 
